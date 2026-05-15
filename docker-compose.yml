@@ -1,0 +1,38 @@
+name: traced
+
+networks:
+  traced:
+
+services:
+
+  server:
+    build:
+      context: ./server
+    ports:
+      - "8080:8080"
+    environment:
+      - WINDOW_MINUTES=30
+      - RUST_LOG=info
+    networks:
+      - traced
+    restart: unless-stopped
+
+  dashboard:
+    build:
+      context: ./dashboard
+    ports:
+      - "8081:80"
+    networks:
+      - traced
+    restart: unless-stopped
+
+  emitter:
+    build:
+      context: ./emitter
+    env_file:
+      - path: .env
+    networks:
+      - traced
+    profiles:
+      - tools
+    restart: "no"
