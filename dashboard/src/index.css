@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-950 text-gray-100 h-screen flex flex-col overflow-hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded-full hover:bg-gray-700 transition-colors;
+}
+
+.glass-panel {
+  @apply bg-gray-900/50 backdrop-blur-md border border-gray-800/50;
+}
