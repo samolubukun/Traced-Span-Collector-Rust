@@ -85,6 +85,4 @@ Requires [Rust](https://rustup.rs/) and [Node.js](https://nodejs.org/).
 ## 📈 Technical Trade-offs
 Detailed design decisions regarding storage concurrency, memory management, and eviction strategies are documented in [TRADEOFFS.md](./TRADEOFFS.md).
 
-## 📄 License
-Part of the [Backend Engineer Path](https://github.com/benx421/backend-engineer-path).
-Original specification by `benx421`.
+
