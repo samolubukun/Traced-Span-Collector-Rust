@@ -1,6 +1,6 @@
 # Traced: High-Performance Distributed Trace Collector
 
-**Traced** is a production-grade, distributed span ingestion and visualization system built entirely in **Rust** and **React**. It simulates the backend of an observability platform like Datadog or Honeycomb, capable of assembling disparate spans into coherent traces, managing data lifecycle via rolling windows, and providing real-time insights through a premium dashboard.
+**Traced** is a distributed span ingestion and visualization system built entirely in **Rust** and **React**. It simulates the backend of an observability platform like Datadog or Honeycomb, capable of assembling disparate spans into coherent traces, managing data lifecycle via rolling windows, and providing real-time insights through a premium dashboard.
 
 ## 🚀 The Architecture
 
